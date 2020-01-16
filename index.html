@@ -4,28 +4,38 @@
     <meta charset="UTF-8">
     <title>The first interface</title>
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
 </head>
 <body>
     <div class="wrapper">
-        <ul class="header">
+        <ul class="header js-tab-buttons">
             <li class="header__list">
-                <a class="header__list--item" href="#">Профиль</a>
+                <button type="button"
+                        class="header__list--item js-tab-button"
+                        data-tab="profile"
+                >
+                    Профиль
+                </button>
             </li>
             <li class="header__list">
-                <a class="header__list--item" href="#">Друзья пользователя</a>
+                <button type="button"
+                        class="header__list--item js-tab-button"
+                        data-tab="list"
+                >
+                    Друзья пользователя
+                </button>
             </li>
         </ul>
-        <main>
+
+        <main id="profile" class="js-tab-content">
             <div class="avatar">
                 <div class="avatar__img"></div>
                 <a class="avatar__button" href="#">Join us</a>
 
             </div>
             <div class="content">
-                <div class="content__name">
-                    <p class="content__name--name">Виталя Гора</p>
-                    <p class="content__name--city">г. Нижние Шахты</p>
+                <div class="content__info info">
+                    <p class="info__name">Виталя Гора</p>
+                    <p class="info__city">г. Нижние Шахты</p>
                 </div>
                 <div class="content__about">
                     <ul class="content__about--list">
@@ -56,9 +66,9 @@
                     </ul>
                 </div>
             </div>
-
         </main>
-        <main>
+
+        <main id="list" class="js-tab-content">
             <div class="friends">
                 <div class="friends__avatar"></div>
                 <div class="friends__name">
@@ -123,5 +133,6 @@
             </div>
         </main>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
