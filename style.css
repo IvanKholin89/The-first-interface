@@ -70,6 +70,7 @@ main {
     text-decoration: none;
     color: #ffffff;
     border-radius: 5px;
+    width: 82%;
     padding: 10px 15px;
     background: linear-gradient(to bottom, #e67f00, #e65400);;
     font-size: 14px;
